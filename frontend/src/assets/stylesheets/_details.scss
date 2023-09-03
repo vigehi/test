@@ -1,0 +1,67 @@
+.detail-section {
+  .bottom-details {
+    a {
+      align-self: center;
+      margin-top: 1.5rem;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 1200px) {
+    align-items: center;
+
+    .top-details {
+      width: 60%;
+    }
+
+    .bottom-details {
+      width: 40%;
+      align-self: stretch;
+
+      a {
+        margin-top: auto;
+      }
+    }
+  }
+}
+
+.profile-pic {
+  width: 60%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  margin: 20px auto 10px;
+}
+
+.bio-head {
+  padding-top: 10px;
+}
+
+.bio {
+  padding: 5px 20px 10px 20px;
+  font-size: 0.9rem;
+}
+
+.inner-listing {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+}
+
+.doctor-items {
+  list-style: none;
+
+  .inner-listing:nth-of-type(odd) {
+    background-color: $soft-white;
+  }
+}
+
+.resrvebtn {
+  margin-top: 25px;
+}

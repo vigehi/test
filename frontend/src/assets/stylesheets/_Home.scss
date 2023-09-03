@@ -1,0 +1,118 @@
+.welcome,
+.doctors {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: lightgray;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/doctors-background.jpg');
+  background-size: cover, cover;
+  background-position: center;
+
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+
+.doctors {
+  height: 100%;
+
+  h1 {
+    font-family: Righteous, Ubuntu, sans-serif;
+  }
+}
+
+.doctor-card {
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+
+  img {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid darkgray;
+  }
+
+  .name {
+    font-weight: bold;
+    margin: 2rem auto 0;
+    padding-bottom: 1rem;
+    width: max-content;
+    border-bottom: 1px dashed #dee2e6;
+  }
+
+  .info {
+    margin-top: 1rem;
+  }
+}
+
+.rounded-icon {
+  display: block;
+  padding: 0.1rem 0.43rem 0.25rem;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  color: darkgray;
+  border: 1px solid;
+}
+
+.doctors-carousel {
+  .carousel-inner {
+    padding: 0 74px 39px;
+
+    @media (max-width: 375px) {
+      padding: 0 40px 39px;
+    }
+  }
+
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    display: flex;
+  }
+}
+
+.carousel-next-icon,
+.carousel-prev-icon {
+  color: white;
+  background-color: $primary;
+  font-size: 1.6rem;
+
+  @media (max-width: 375px) {
+    font-size: 1rem;
+  }
+}
+
+.carousel-next-icon {
+  padding: 0.8rem 2rem 0.8rem 1rem;
+  border-radius: 50% 0 0 50%;
+
+  @media (max-width: 375px) {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+}
+
+.carousel-prev-icon {
+  padding: 0.8rem 1rem 0.8rem 2rem;
+  border-radius: 0 50% 50% 0;
+
+  @media (max-width: 375px) {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  opacity: 0.7;
+}
+
+.disabled {
+  background-color: darkgray;
+}

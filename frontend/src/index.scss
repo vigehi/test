@@ -1,0 +1,12 @@
+$soft-white: #e3e3e3;
+$primary: #96bf01;
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import 'App';
+@import 'assets/stylesheets/forms';
+@import 'assets/stylesheets/Sidebar';
+@import 'assets/stylesheets/Home';
+@import 'assets/stylesheets/details';
+@import 'assets/stylesheets/booking';
+@import 'assets/stylesheets/Book';
+@import 'assets/stylesheets/Doctors';

@@ -1,0 +1,68 @@
+.book-bg {
+  background-color: lightgray;
+  background-image: linear-gradient(rgba(150, 191, 1, 0.85), rgba(150, 191, 1, 0.85)), url('../images/book-bg.jpg');
+  background-size: cover, cover;
+  background-position: center;
+}
+
+.book-form {
+  .dropdown-menu {
+    max-width: 380px;
+    width: 100%;
+
+    &.show {
+      display: flex;
+      flex-direction: column;
+    }
+
+    ul {
+      max-height: 185px;
+      overflow: auto;
+    }
+  }
+}
+
+.doctor-thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.react-datepicker-wrapper {
+  width: auto;
+}
+
+.react-datepicker__navigation-icon::before {
+  height: 13px;
+  width: 13px;
+  top: 11px;
+}
+
+.react-datepicker__input-container {
+  input {
+    width: 100%;
+  }
+}
+
+.react-datepicker__day {
+  @media (max-width: 375px) {
+    width: 1.3rem;
+    line-height: 1.3rem;
+  }
+}
+
+.react-datepicker__header--has-time-select {
+  @media (max-width: 375px) {
+    width: 195px;
+
+    .react-datepicker__day-name {
+      width: 1.3rem;
+      line-height: 1.3rem;
+    }
+  }
+}
+
+.react-datepicker-popper {
+  z-index: 999;
+}

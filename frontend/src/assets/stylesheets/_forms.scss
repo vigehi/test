@@ -1,0 +1,82 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 0.25rem;
+  padding: 6px;
+
+  .preview {
+    width: 25%;
+    max-width: 83px;
+
+    img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .image-upload {
+    width: 75%;
+    padding: 0 1rem;
+    overflow: hidden;
+
+    .file-picker {
+      position: relative;
+    }
+
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+    }
+
+    label {
+      font-size: 1.2rem;
+    }
+
+    .file-selection {
+      display: flex;
+      gap: 0.25rem;
+
+      small {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      button {
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .remove-avatar {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 320px) {
+    .preview {
+      width: 68px;
+      flex-shrink: 0;
+    }
+
+    .image-upload {
+      width: auto;
+    }
+  }
+}
+
+.form-width-sm {
+  max-width: 540px;
+}

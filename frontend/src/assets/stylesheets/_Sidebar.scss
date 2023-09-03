@@ -1,0 +1,119 @@
+.sidebar {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 999;
+
+  nav {
+    padding: 0;
+  }
+
+  .logo-pic {
+    width: 100%;
+  }
+
+  @media (min-width: 992px) {
+    left: 0;
+    top: 0;
+    position: relative;
+    flex-shrink: 0;
+    width: 25%;
+    min-width: 270px;
+    max-width: 350px;
+    border-right: 1px solid lightgray;
+
+    .navbar-expand-lg {
+      height: 100%;
+    }
+
+    .offcanvas {
+      height: 100%;
+    }
+
+    .offcanvas-body {
+      height: 100%;
+      padding-left: 0.7rem;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .logo {
+      font-size: 3rem;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+.offcanvas-start {
+  width: 80%;
+  max-width: 320px;
+  min-width: 255px;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 3.5rem;
+
+  @media (max-width: 375px) {
+    margin-top: 2rem;
+
+    .link-item {
+      padding: 7px 7px 7px 15px;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.link-item {
+  padding: 15px 15px 15px 30px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Righteous, sans-serif;
+  font-weight: bold;
+  color: $secondary;
+}
+
+.social-icons {
+  a {
+    color: $secondary;
+  }
+}
+
+.signout-loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d4d4d7d;
+}
+
+.back-btn {
+  position: fixed;
+  left: 0;
+  bottom: 6px;
+  padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+  border-radius: 0 50% 50% 0;
+  color: white;
+  background-color: $primary;
+  font-size: 1.4rem;
+
+  @media (min-width: 992px) {
+    position: absolute;
+    left: initial;
+    right: -60px;
+    bottom: 25px;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    font-size: 1.6rem;
+  }
+}

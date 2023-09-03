@@ -1,0 +1,31 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+h1,
+h2 {
+  font-family: Righteous, Ubuntu, sans-serif;
+}
+
+body {
+  background-color: $soft-white;
+}
+
+.App {
+  text-align: center;
+}
+
+.notice {
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  right: 25px;
+  z-index: 999;
+
+  @media (max-width: 375px) {
+    left: 10px;
+    right: 10px;
+  }
+}
