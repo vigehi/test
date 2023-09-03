@@ -121,7 +121,6 @@ The user then can modify and play with the files as needed
 
 - GitHub: [@vigehi](https://github.com/vigehi)
 - LinkedIn: [LinkedIn](update-link)
-- Twitter: [@BrendaWihogora](https://twitter.com/BrendaWihogora)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
